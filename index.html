@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            /* display: block; */
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <label for="url">Enter Img Url:</label>
+        <input id="url" type="url" placeholder="Img Url">
+
+        <label for="fname">Enter First Name:</label>
+        <input id="fname" type="text" placeholder="First Name">
+
+        <label for="lname">Enter Last Name:</label>
+        <input type="text" id="lname" placeholder="Last Name">
+
+        <label>Choose Your Gender:</label>
+        <input id="male" name="gender" type="radio">
+        <label for="male">Male</label>
+        <input id="female" name="gender" type="radio">
+        <label for="female">Female</label><br><br>
+
+        <label for="bday">Enter Your Birth Date:</label>
+        <input id="bday" type="date" placeholder="Select DOB">
+
+        <label>Select Your Interests:</label>
+        <input type="checkbox" id="music" name="interest">
+        <label for="music">Music</label>
+        <input type="checkbox" id="singing" name="interest">
+        <label for="singing">Singing</label>
+        <input type="checkbox" id="dancing" name="interest">
+        <label for="dancing">Dancing</label>
+
+        <label for="city">Choose Your City:</label>
+        <select id="city">
+            <option value="Bangalore">Bangalore</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Hyderabad">Hyderabad</option>
+        </select>
+
+        <label for="contact">Enter Contact Number:</label>
+        <input id="contact" type="tel" placeholder="Contact Number">
+
+        <label for="mail">Enter Email:</label>
+        <input id="mail" type="email" placeholder="Email">
+
+        <label for="pass">Enter Password:</label>
+        <input id="pass" type="password" placeholder="Password">
+
+        <input type="submit" value="Sign Up">
+    </form>
+</body>
+<script src="index.js"></script>
+</html>
+
+
+
+
+
+
